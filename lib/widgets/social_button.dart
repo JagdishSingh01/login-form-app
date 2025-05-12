@@ -21,7 +21,10 @@ class SocialButton extends StatelessWidget {
       icon: SvgPicture.asset(
         iconPath,
         width: 25,
-        color: Pallete.whiteColor,
+        colorFilter: const ColorFilter.mode(
+          Pallete.whiteColor,
+          BlendMode.srcIn,
+        ),
       ),
       label: Text(
         label,
